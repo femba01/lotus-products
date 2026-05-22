@@ -1,11 +1,5 @@
-import React from 'react'
-import type { Product } from '../../types/products';
 
-type Props = {
-    productdata?: Product[];
-}
-
-const DashboardChart = ({productdata}: Props) => {
+const DashboardChart = () => {
     return (
         <div className='grid md:grid-cols-2 gap-6'>
             <div>

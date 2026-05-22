@@ -1,24 +1,6 @@
-import { useState } from "react";
-import { useProducts } from "../../hooks/useProducts";
 import DashboardChart from "./dashboard-chart";
 
 export default function Dashboard() {
-  const [page, setPage] = useState(1);
-
-  const {
-    data,
-    isLoading,
-    error,
-    isFetching,
-  } = useProducts({ page });
-
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Something went wrong.</div>;
-  }
 
   return (
     <div className="space-y-6 py-6">

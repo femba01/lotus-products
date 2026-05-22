@@ -36,7 +36,7 @@ export default function DashboardLayout() {
                 <header className="w-auto bg-white border-b px-6 py-4">
                     <div className="flex justify-between items-center">
                         <h1 className="flex gap-4 text-xl font-semibold">
-                            <DropdownMenu title={<Menu onClick={()=> setOpenSidebar(!openSideBar)} className="md:hidden" />} items={["Dashboard", "Products"]} onCategoryChange={(value)=> handleNavigation(value)} />
+                            <div className="md:hidden"><DropdownMenu title={<Menu onClick={()=> setOpenSidebar(!openSideBar)} className="md:hidden" />} items={["Dashboard", "Products"]} onCategoryChange={(value)=> handleNavigation(value)} /></div>
                             
                             Lotus Dashboard
                         </h1>

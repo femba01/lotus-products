@@ -18,7 +18,7 @@ export default function Sidebar({ }: Props) {
                         </a>
                     </li>
                     <li>
-                        <a href="/products" className={`block py-2 px-4 rounded-lg hover:bg-gray-700 transition ${pathname === '/products' ? 'bg-gray-700' : ''}`}>
+                        <a href="/products" className={`block py-2 px-4 rounded-lg hover:bg-gray-700 transition ${pathname.includes('/products') ? 'bg-gray-700' : ''}`}>
                             Products
                         </a>
                     </li>

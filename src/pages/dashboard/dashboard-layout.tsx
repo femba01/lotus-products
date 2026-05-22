@@ -1,5 +1,3 @@
-// layouts/dashboard-layout.tsx
-
 import { Outlet, useNavigate } from "react-router-dom";
 import { Bell, LogOut, Menu } from "lucide-react";
 import Sidebar from "../../components/Sidebar";
